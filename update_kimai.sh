@@ -46,9 +46,9 @@ if [[ "$response" == "y" || "$response" == "Y" ]]; then
     bin/console kimai:update
     check_command_status
 
-    read -p "Do you want to fix the permissions? (y/n): " fix_permissions
+    read -p "Do you want to fix the ownership? (y/n): " fix_ownership
 
-    if [[ "$fix_permissions" == "y" || "$fix_permissions" == "Y" ]]; then
+    if [[ "$fix_ownership" == "y" || "$fix_ownership" == "Y" ]]; then
         while true; do
             read -p "Enter the owner (e.g., username:group) or type 'exit' to quit: " owner
 
